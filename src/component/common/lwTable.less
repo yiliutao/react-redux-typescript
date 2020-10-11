@@ -1,0 +1,45 @@
+.lwTable{
+    background: #fff;
+    padding: 10px 14px 20px 14px;
+    .ant-table-wrapper{
+        overflow: auto;
+    }
+    .ant-table-row.even{
+        background-color: #fafafa;
+    }
+    .ant-table-row.highLight{
+        background-color: #EC808D;
+    }
+    .ant-table-thead > tr.highLight.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td,
+    .ant-table-tbody > tr.highLight.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td,
+    .ant-table-thead > tr.highLight:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td,
+    .ant-table-tbody > tr.highLight:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td {
+        background: #EC808D;
+    }
+    .ant-table-thead > tr.highLight:hover.ant-table-row-selected > td,
+    .ant-table-tbody > tr.highLight:hover.ant-table-row-selected > td {
+        background: #EC808D;
+    }
+    .ant-table-thead > tr.highLight:hover.ant-table-row-selected > td.ant-table-column-sort,
+    .ant-table-tbody > tr.highLight:hover.ant-table-row-selected > td.ant-table-column-sort {
+        background: #EC808D;
+    }
+    .ant-pagination{
+        margin-top: 12px;
+        text-align: right;
+    }
+    .ant-table-column-title{
+        white-space: nowrap;
+        font-weight: bold;
+    }
+    .ant-table-thead > tr > th, .ant-table-tbody > tr > td{
+        white-space: nowrap;
+    }
+    &.hideHeaderCheckBox{
+        .ant-table-thead{
+            .ant-checkbox-wrapper{
+                display: none;
+            }
+        }
+    }
+}

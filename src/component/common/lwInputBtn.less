@@ -1,0 +1,34 @@
+.lwInputBtn{
+    .note{
+        overflow: hidden;
+        white-space: nowrap;
+        margin-right: 6px;
+        font-weight: bold;
+        vertical-align: middle;
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 4px;
+    }
+    .note::before{
+        content: "*";
+        color: #f00;
+        padding: 2px 3px;
+    }
+    .value{
+        display: inline-block;
+        .ant-btn{
+            margin-left: 10px;
+            width: 100px;
+        }
+        .ant-btn-disabled{
+            color: #f00;
+        }
+    }
+    .tips{
+        padding-left: 6px;
+        color: #f00;
+        font-size: 12px;
+        min-height: 20px;
+        text-align: left;
+    }
+}

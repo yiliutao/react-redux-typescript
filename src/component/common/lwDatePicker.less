@@ -1,0 +1,73 @@
+.lwDatePanel{
+    margin: 10px;
+    box-sizing: content-box;
+    position: relative;
+    width: 500px;
+    border: 1px solid rgba(128, 128, 128, 0.31);
+    border-radius: 6px;
+}
+.lwDateHeader {
+    padding: 20px 10px;
+    width: 100%;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.31);
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    .anticon{
+        margin: 0 16px;
+    }
+}
+.lwDateBody {
+    user-select: none;
+    -webkit-user-select: none;
+    .weekdays{
+        text-align: center;
+    }
+    .weekdays > span {
+        display: inline-block;
+        font-size: 14px;
+        width: 60px;
+        height: 60px;
+        line-height: 55px;
+        font-weight: 600;
+        color: #675b5b;
+        text-align: center;
+    }
+    .panelDate{
+        text-align: center;
+    }
+    .panelDate > span {
+        font-size: 14px;
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        font-weight: 600;
+        text-align: center;
+        color: #223b54;
+        cursor: pointer;
+    }
+    .panelDate span.otherMonthDate {
+        color: #b3b1b1;
+        cursor: no-drop;
+        background-color:#e0e0e0;
+    }
+    .panelDate span.otherMonthDate.weekends {
+        color: #f7b0b9 !important;
+    }
+    .panelDate span.weekends {
+        color: #d9001b !important;
+    }
+    .panelDate span.today {
+        border: 1px solid #8CC9FF;
+        background-color: #8CC9FF;
+    }
+    .panelDate span.pastDate {
+        color: #223b54;
+        cursor: no-drop;
+        background-color: #e0e0e0;
+    }
+    .panelDate span.pastDate.weekends {
+        color: #FF3E56 !important;
+    }
+}

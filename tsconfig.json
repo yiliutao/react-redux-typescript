@@ -1,0 +1,47 @@
+{
+    "compilerOptions": {
+        "outDir": "dist",
+        "allowJs": true,
+        "sourceMap": true,
+        "noImplicitAny": true,
+        "module": "commonjs",
+        "target": "ES2017",
+        "strict": true,
+        "removeComments": true,
+        "jsx": "react",
+        "esModuleInterop": true,
+        "baseUrl": ".",
+        "paths": {
+            "@public/*": [
+                "./public/*"
+            ],
+            "@pages/*": [
+                "./src/pages/main/views/biz/*"
+            ],
+            "@static/*": [
+                "./src/static/*"
+            ],
+            "@component/*": [
+                "./src/component/*"
+            ],
+            "@lwRedux/*": [
+                "./src/redux/*"
+            ],
+            "@middleware/*": [
+                "./src/middleware/*"
+            ],
+            "@bizRouter/*": [
+                "./src/static/biz/moduleAuth/*"
+            ],
+        },
+        "types": [
+            "node"
+        ]
+    },
+    "include": [
+        "./src/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+    ],
+}
